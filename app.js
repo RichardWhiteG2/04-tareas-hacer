@@ -14,16 +14,17 @@ const main = async() => {
     
     do{
         // opt = await mostrarMenu();
+        //Imprimir menu
         opt = await inquirerMenu();
         switch (opt) {
             case '1':
                 //Crear opcion
                 const desc = await leerInput('Descripción');
                 tareas.crearTarea(desc);
-                console.log(desc);
                 break;
             case '2':
-                console.log( tareas._listado);
+                // console.log( tareas._listado);
+                console.log( tareas.listadoArr);
                 break;
         }
         await pausa();

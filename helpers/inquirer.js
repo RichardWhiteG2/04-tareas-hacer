@@ -14,7 +14,7 @@ const preguntas = [
             },
             {
                 value: '2',
-                name: `${'2.'.green} Listar tarea`
+                name: `${'2.'.green} Listar tareas`
             },
             {
                 value: '3',
@@ -45,7 +45,7 @@ const inquirerMenu = async ()=>{
     console.log('=========================='.green);
     console.log('  Seleccione una opción'.white);
     console.log('==========================\n'.green); 
-
+    console.log();
     const {opcion} = await inquirer.prompt(preguntas);
     return opcion;   
 }
